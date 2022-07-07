@@ -1,9 +1,6 @@
 name: Build and Push Docker Image
 on:
   push:
-  workflow_dispatch:
-  schedule:
-    - cron:  '0 6 * * 6'
 jobs:
   docker:
     runs-on: ubuntu-latest
